@@ -223,7 +223,6 @@ export class GameScreen extends Container {
         // Play a random song
         playRandomSong();
 
-
         await gsap.to(this.gameContainer.pivot, { y: 0, duration: 0.5, ease: 'back.out' });
         await this.countdown.show();
         await this.cauldron.show();
