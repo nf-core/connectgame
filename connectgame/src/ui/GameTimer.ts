@@ -12,8 +12,10 @@ export class GameTimer extends Container {
     constructor() {
         super();
         this.messageLabel = new Label('5:00', {
-            fontSize: 36,
-            fill: 0xffffff,
+            fontSize: 32,
+            fill: 0x000000,
+            stroke: 0xffffff,
+            fontWeight: 'bolder',
         });
         this.addChild(this.messageLabel);
     }
