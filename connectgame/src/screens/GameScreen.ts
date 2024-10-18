@@ -199,7 +199,31 @@ export class GameScreen extends Container {
 
     /** Show screen with animations */
     public async show() {
-        bgm.play('common/bgm-game.mp3', { volume: 0.5 });
+        // Array of song paths
+        const songs = [
+            'common/pip_install_nf-core.mp3',
+            'common/a_walk_through_sarek_releases.mp3',
+            'common/coding_with_my_rubberduck.mp3',
+            'common/hackathon_high.mp3',
+            'common/the_biobat_vigilante.mp3',
+            'common/the_sock_hunt.mp3',
+            'common/type_nf-core_create.mp3',
+        ];
+
+        // Function to play a random song
+        function playRandomSong() {
+            // Select a random index from the songs array
+            const randomIndex = Math.floor(Math.random() * songs.length);
+            // Get the song path using the random index
+            const selectedSong = songs[randomIndex];
+            // Play the selected song with the desired volume
+            bgm.play(selectedSong, { volume: 0.5 });
+        }
+
+        // Play a random song
+        playRandomSong();
+
+
         await gsap.to(this.gameContainer.pivot, { y: 0, duration: 0.5, ease: 'back.out' });
         await this.countdown.show();
         await this.cauldron.show();
