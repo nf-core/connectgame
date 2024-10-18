@@ -110,7 +110,7 @@ export class HomeScreen extends Container {
 
     /** Show screen with animations */
     public async show() {
-        bgm.play('common/bgm-main.mp3', { volume: 0.7 });
+        bgm.play('common/pip_install_nf-core.mp3', { volume: 0.7 });
 
         // Reset visual state, hide things that will show up later
         this.playButton.hide(false);
