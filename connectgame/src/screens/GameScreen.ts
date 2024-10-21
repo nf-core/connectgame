@@ -208,6 +208,8 @@ export class GameScreen extends Container {
             'common/the_biobat_vigilante.mp3',
             'common/the_sock_hunt.mp3',
             'common/type_nf-core_create.mp3',
+            'common/colorful_hexagons.mp3',
+            'common/nextflow_magic.mp3',
         ];
 
         // Function to play a random song
