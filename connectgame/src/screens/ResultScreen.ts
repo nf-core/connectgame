@@ -153,7 +153,7 @@ export class ResultScreen extends Container {
 
     /** Show screen with animations */
     public async show() {
-        bgm.play('common/bgm-main.mp3', { volume: 0.5 });
+        bgm.play('common/ShowMeThosePRs.mp3', { volume: 0.5 });
         // GameScreen hide to a flat colour covering the viewport, which gets replaced
         // by this transition, revealing this screen
         this.maskTransition?.playTransitionIn();
