@@ -1,6 +1,6 @@
 # nf-core/connectgame
 
-https://nf-core.github.io/connectgame/
+[https://nf-core.github.io/connectgame/](https://nf-core.github.io/connectgame/connectgame/)
 
 Made for [nf-core](https://nf-co.re/), with love by:
 
